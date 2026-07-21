@@ -12,6 +12,7 @@
 
 /* Sections style */
 @import url('./header.css');
+@import url('./hero.css');
 @import url('./english-package-section.css');
 @import url('./reviews.css');
 @import url('./footer.css');
