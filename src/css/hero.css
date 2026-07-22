@@ -1,0 +1,194 @@
+.hero {
+  padding-top: 8px;
+  padding-bottom: 80px;
+}
+
+.hero-content {
+  position: relative;
+  display: flex;
+  min-height: clamp(604px, 189vw, 709px);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 clamp(16px, 5.33vw, 20px) 72px;
+  overflow: hidden;
+  color: var(--white);
+  border-radius: 16px;
+  background-image:
+    linear-gradient(57deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%),
+    url('../img/webp/hero-mobile.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-title {
+  max-width: 295px;
+  margin-bottom: clamp(36px, 10.67vw, 40px);
+  font-size: clamp(32px, 10.13vw, 38px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.hero-title-accent {
+  color: var(--green-accent);
+}
+
+.hero-button {
+  display: flex;
+  width: min(100%, 295px);
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71;
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: var(--radius-md);
+  transition:
+    background-color var(--cubic),
+    box-shadow var(--cubic);
+}
+
+.hero-button:hover,
+.hero-button:focus-visible {
+  background-color: var(--green-hover);
+  box-shadow: 0 4px 12px rgba(18, 20, 23, 0.15);
+}
+
+.hero-scroll-link {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  display: flex;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  color: var(--green);
+  background-color: var(--white);
+  border-radius: 50%;
+  transition:
+    color var(--cubic),
+    background-color var(--cubic),
+    transform var(--cubic);
+}
+
+.hero-scroll-link:hover,
+.hero-scroll-link:focus-visible {
+  color: var(--white);
+  background-color: var(--green);
+  transform: translateY(2px);
+}
+
+.hero-scroll-icon {
+  display: block;
+}
+
+@media (min-resolution: 2dppx) {
+  .hero-content {
+    background-image:
+      linear-gradient(
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../img/webp/hero-mobile@2x.webp');
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding-top: 16px;
+    padding-bottom: 100px;
+  }
+
+  .hero-content {
+    min-height: 857px;
+    padding: 260px 32px 295px;
+    border-radius: var(--radius-lg);
+    background-image:
+      linear-gradient(
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../img/webp/hero-tablet.webp');
+  }
+
+  .hero-title {
+    max-width: 488px;
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 1.17;
+  }
+
+  .hero-button {
+    width: 306px;
+    min-height: 60px;
+    padding: 16px 24px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  .hero-scroll-link {
+    right: 32px;
+    bottom: 32px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .hero-scroll-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-content {
+    background-image:
+      linear-gradient(
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../img/webp/hero-tablet@2x.webp');
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero {
+    padding-bottom: 96px;
+  }
+
+  .hero-content {
+    min-height: 629px;
+    padding: 0 64px 163px;
+    background-image:
+      linear-gradient(
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../img/webp/hero-desktop.webp');
+  }
+
+  .hero-title {
+    max-width: 564px;
+  }
+}
+
+@media only screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero-content {
+    background-image:
+      linear-gradient(
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../img/webp/hero-desktop@2x.webp');
+  }
+}
