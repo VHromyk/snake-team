@@ -1,5 +1,5 @@
 .reviews {
-  padding-block: clamp(64px, 9vw, 100px);
+  padding-bottom: 80px;
 }
 
 .reviews-list {
@@ -10,8 +10,8 @@
 
 .review-item {
   background: var(--gray);
-  border-radius: var(--radius-lg);
-  padding: 32px;
+  border-radius: 16px;
+  padding: 20px;
 }
 
 .review-item:nth-child(2),
@@ -24,9 +24,8 @@
   align-items: center;
   gap: 12px;
   background: var(--green);
-  border-radius: 15px;
-  padding: 14px 16px;
-  margin-bottom: 20px;
+  border-radius: var(--radius-xs);
+  padding: 14px;
 }
 
 .review-head img {
@@ -37,14 +36,14 @@
   flex-shrink: 0;
 }
 
-.review-head h3 {
+.review-head .name {
   font-size: 20px;
   font-weight: 800;
   letter-spacing: -0.4px;
   color: var(--white);
 }
 
-.review-role {
+.review-head .review-role {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -53,6 +52,7 @@
   font-size: 14px;
   line-height: 1.5;
   color: var(--gray-text);
+  padding: 20px 14px;
 }
 
 /* Tablet */
@@ -61,16 +61,23 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .review-item {
+    padding: 16px;
+    border-radius: 30px;
+  }
+
   .review-item:nth-child(2) {
     display: block;
   }
 
   .review-head {
-    margin-bottom: 32px;
+    margin: 16px 0;
+    border-radius: 15px;
   }
 
   .review-text {
     font-size: 16px;
+    padding: 16px;
   }
 }
 
