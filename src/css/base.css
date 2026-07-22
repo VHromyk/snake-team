@@ -1,25 +1,65 @@
 :root {
   /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    'Manrope',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --black: #121417;
+  --white: #ffffff;
+  --green: #4dc274;
+  --green-hover: #38ae5f;
+  --green-linear: linear-gradient(90deg, #4dc274, #bee8cc);
+  --green-accent: #bee8cc;
+  --light-green: #d4fde1;
+  --gray: #f3f5f6;
+  --gray-text: rgba(18, 20, 23, 0.5);
+
+  --cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  --radius-lg: 30px;
+  --radius-md: 12px;
+  --radius-sm: 10px;
+  --radius-xs: 8px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
+  min-width: 100%;
   min-height: 100vh;
   margin: 0;
 }
@@ -29,4 +69,46 @@ main {
 }
 main:has(.back-link) {
   text-align: center;
+}
+
+/* ---------- Section ---------- */
+.section-head {
+  text-align: center;
+  max-width: 760px;
+  margin-inline: auto;
+  margin-bottom: clamp(40px, 6vw, 64px);
+}
+
+.section-title {
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  margin-bottom: 16px;
+}
+
+.section-lead {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--gray-text);
+  font-weight: 400;
+}
+
+.section-title .highlight {
+  position: relative;
+  z-index: 0;
+  color: inherit;
+  white-space: nowrap;
+}
+
+.section-title .highlight::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -6px;
+  right: -6px;
+  bottom: 0;
+  height: 20px;
+  background: var(--green-accent);
+  border-radius: var(--radius-xs);
 }
