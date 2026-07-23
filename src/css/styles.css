@@ -8,9 +8,9 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./section.css');
+@import url('./section-head.css');
 @import url('./container.css');
 @import url('./animations.css');
-@import url('./our_teachers.css');
 
 /* Sections style */
 @import url('./header.css');
@@ -18,6 +18,7 @@
 @import url('./about-us.css');
 @import url('./our-lessons.css');
 @import url('./english-package-section.css');
+@import url('./our_teachers.css');
 @import url('./reviews.css');
 @import url('./footer.css');
 @import url('./leave-application.css');
