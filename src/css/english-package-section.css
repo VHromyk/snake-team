@@ -97,10 +97,6 @@
 
 /* Mobil */
 @media only screen and (max-width: 767px) {
-  .english-packages {
-    padding: 40px 0px;
-  }
-
   .english-packeges-banner {
     overflow: hidden;
     border-radius: 16px;
@@ -156,9 +152,6 @@
 
 /* Tablet*/
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
-  .english-packages {
-    padding: 50px 0px;
-  }
   .english-packeges-banner {
     padding: 64px 32px;
   }
@@ -234,10 +227,6 @@
 
 /* Desktop */
 @media only screen and (min-width: 1280px) {
-  .english-packages {
-    padding: 75px 0px;
-  }
-
   .english-packeges-banner {
     padding: 64px;
   }

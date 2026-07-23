@@ -1,7 +1,3 @@
-.our-lessons {
-  padding-block: clamp(64px, 9vw, 100px);
-}
-
 .lessons-list {
   display: flex;
   flex-wrap: wrap;
