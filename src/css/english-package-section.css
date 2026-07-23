@@ -70,7 +70,9 @@
   letter-spacing: -0.02em;
 }
 
-.check {
+.power-of-english-list li:before {
+  content: '';
+  border-radius: 50%;
   flex-shrink: 0;
 }
 
@@ -134,9 +136,12 @@
     gap: 8px;
   }
 
-  .check {
+  .power-of-english-list li:before {
     width: 20px;
     height: 20px;
+    background: var(--green) url('../img/check-mobil.svg') no-repeat center
+      center/cover;
+    background-size: 20px 20px;
   }
 
   .power-of-english-btn {
@@ -208,9 +213,12 @@
     gap: 16px;
   }
 
-  .check {
+  .power-of-english-list li:before {
     width: 28px;
     height: 28px;
+    background: var(--green) url('../img/check.svg') no-repeat center
+      center/cover;
+    background-size: 20px 20px;
   }
 
   .power-of-english-btn {
