@@ -11,7 +11,7 @@
 .review-item {
   background: var(--gray);
   border-radius: 16px;
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
 }
 
 .review-item:nth-child(2),
@@ -52,7 +52,9 @@
   font-size: 14px;
   line-height: 1.5;
   color: var(--gray-text);
-  padding: 20px 14px;
+  margin-top: 20px;
+  margin-left: 14px;
+  margin-right: 14px;
 }
 
 /* Tablet */
@@ -66,7 +68,7 @@
   }
 
   .review-item {
-    padding: 16px;
+    padding: 32px 16px 40px 16px;
     border-radius: 30px;
   }
 
@@ -75,13 +77,12 @@
   }
 
   .review-head {
-    margin: 16px 0;
     border-radius: 15px;
   }
 
   .review-text {
     font-size: 16px;
-    padding: 16px;
+    margin: 32px 16px 0;
   }
 }
 

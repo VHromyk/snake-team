@@ -5,10 +5,6 @@
 }
 
 .lesson-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
   width: 100%;
   padding: 40px 20px;
   border: 1px solid var(--green);
@@ -36,12 +32,14 @@
   line-height: 1.375;
   letter-spacing: -0.64px;
   color: var(--black);
+  margin-top: 16px;
 }
 
 .lesson-text {
   font-size: 14px;
   line-height: 1.5;
   color: var(--gray-text);
+  margin-top: 40px;
 }
 
 .lesson-item--featured .lesson-title,
@@ -56,7 +54,7 @@
 .lesson-btn {
   display: block;
   width: 100%;
-  margin-top: auto;
+  margin-top: 20px;
   padding: 14px;
   border: 1px solid transparent;
   border-radius: var(--radius-md);
@@ -104,12 +102,14 @@
 
   .lesson-text {
     font-size: 16px;
+    margin-top: 32px;
   }
 
   .lesson-btn {
     padding: 16px;
     font-size: 18px;
     line-height: 1.56;
+    margin-top: 32px;
   }
 }
 
@@ -118,5 +118,9 @@
   .lesson-item {
     width: calc((100% - 64px) / 3);
     padding: 32px;
+  }
+
+  .lesson-text {
+    margin-top: 16px;
   }
 }
