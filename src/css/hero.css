@@ -1,6 +1,6 @@
 .hero {
   padding-top: 8px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .hero-content {
@@ -91,11 +91,7 @@
 @media (min-resolution: 2dppx) {
   .hero-content {
     background-image:
-      linear-gradient(
-        57deg,
-        rgba(0, 0, 0, 0.4) 0%,
-        rgba(0, 0, 0, 0) 100%
-      ),
+      linear-gradient(57deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%),
       url('../img/webp/hero-mobile@2x.webp');
   }
 }
@@ -103,7 +99,7 @@
 @media only screen and (min-width: 768px) {
   .hero {
     padding-top: 16px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 
   .hero-content {
@@ -111,11 +107,7 @@
     padding: 260px 32px 295px;
     border-radius: var(--radius-lg);
     background-image:
-      linear-gradient(
-        57deg,
-        rgba(0, 0, 0, 0.4) 0%,
-        rgba(0, 0, 0, 0) 100%
-      ),
+      linear-gradient(57deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%),
       url('../img/webp/hero-tablet.webp');
   }
 
@@ -150,29 +142,21 @@
 @media only screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-content {
     background-image:
-      linear-gradient(
-        57deg,
-        rgba(0, 0, 0, 0.4) 0%,
-        rgba(0, 0, 0, 0) 100%
-      ),
+      linear-gradient(57deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%),
       url('../img/webp/hero-tablet@2x.webp');
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .hero {
-    padding-bottom: 96px;
+    padding-bottom: 21px;
   }
 
   .hero-content {
     min-height: 629px;
     padding: 0 64px 163px;
     background-image:
-      linear-gradient(
-        57deg,
-        rgba(0, 0, 0, 0.4) 0%,
-        rgba(0, 0, 0, 0) 100%
-      ),
+      linear-gradient(57deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%),
       url('../img/webp/hero-desktop.webp');
   }
 
@@ -184,11 +168,7 @@
 @media only screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .hero-content {
     background-image:
-      linear-gradient(
-        57deg,
-        rgba(0, 0, 0, 0.4) 0%,
-        rgba(0, 0, 0, 0) 100%
-      ),
+      linear-gradient(57deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%),
       url('../img/webp/hero-desktop@2x.webp');
   }
 }

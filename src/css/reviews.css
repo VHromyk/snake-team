@@ -57,6 +57,10 @@
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
+  .reviews {
+    padding-bottom: 100px;
+  }
+
   .reviews-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -83,6 +87,10 @@
 
 /* Desktop */
 @media only screen and (min-width: 1280px) {
+  .reviews {
+    padding-bottom: 150px;
+  }
+
   .reviews-list {
     grid-template-columns: repeat(3, 1fr);
   }
