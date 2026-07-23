@@ -67,8 +67,25 @@
   padding: 0;
 }
 
-.footer .footer-nav-list a:hover {
-  color: var(--green);
+.footer-nav-link {
+  position: relative;
+}
+
+.footer-nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--green);
+  transition: width var(--cubic);
+  transition-duration: 250ms;
+}
+
+.footer-nav-link:hover::after,
+.footer-nav-link:focus::after {
+  width: 37px;
 }
 
 .footer .socials--footer {
