@@ -81,7 +81,7 @@ main:has(.back-link) {
 }
 
 .section-title {
-  font-size: clamp(28px, 4vw, 40px);
+  font-size: clamp(32px, 4vw, 40px);
   line-height: 1.2;
   font-weight: 800;
   letter-spacing: -0.8px;
