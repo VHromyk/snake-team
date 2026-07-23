@@ -1,3 +1,135 @@
 <section class="leave-application" id="leave-application">
-  <div class="container">Leave application</div>
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">
+        Leave an <span class="highlight">application</span>
+      </h2>
+
+      <p class="section-lead">
+        Please use the form below to contact us. Enter your name, email, and
+        message and we'll get back to you shortly.
+      </p>
+    </div>
+
+    <div class="leave-application-wrapper">
+      <div class="leave-application-image">
+        <picture>
+          <!-- Desktop -->
+          <source
+            media="(min-width:1280px)"
+            srcset="../img/leave-application.png"
+          />
+
+          <img
+            src="../img/leave-application.png"
+            alt="Girl learning English"
+            width="492"
+            height="578"
+          />
+        </picture>
+
+        <div class="leave-card">
+          <h3 class="leave-card-title">100%</h3>
+
+          <p class="leave-card-text">
+            of our online English language lessons This journey has been full of
+            discoveries, growth and unforgettable moments, and we are happy to
+            share this joyful event with you.
+          </p>
+        </div>
+      </div>
+
+      <form class="leave-form">
+        <div class="leave-inputs">
+          <input
+            class="leave-input"
+            type="text"
+            name="name"
+            placeholder="Name"
+            required
+          />
+
+          <input
+            class="leave-input"
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+
+          <input
+            class="leave-input"
+            type="tel"
+            name="phone"
+            placeholder="Phone"
+          />
+
+          <textarea
+            class="leave-textarea"
+            name="comment"
+            placeholder="Comment"
+          ></textarea>
+        </div>
+
+        <fieldset class="teacher-group">
+          <legend class="teacher-title">Choose a teacher</legend>
+
+          <div class="teacher-list">
+            <label class="teacher-item">
+              <input
+                class="teacher-radio"
+                type="radio"
+                name="teacher"
+                value="Maria"
+                checked
+              />
+
+              <span class="teacher-name"> Maria </span>
+            </label>
+
+            <label class="teacher-item">
+              <input
+                class="teacher-radio"
+                type="radio"
+                name="teacher"
+                value="Artem"
+              />
+
+              <span class="teacher-name"> Artem </span>
+            </label>
+
+            <label class="teacher-item">
+              <input
+                class="teacher-radio"
+                type="radio"
+                name="teacher"
+                value="Ilona"
+              />
+
+              <span class="teacher-name"> Ilona </span>
+            </label>
+
+            <label class="teacher-item">
+              <input
+                class="teacher-radio"
+                type="radio"
+                name="teacher"
+                value="Volodymyr"
+              />
+
+              <span class="teacher-name"> Volodymyr </span>
+            </label>
+          </div>
+        </fieldset>
+
+        <button class="leave-button" type="submit">Send</button>
+
+        <p class="leave-policy">
+          By clicking on "Send" button, you agree to our
+          <a href="#" class="policy-link"> Privacy Policy </a>, and allow
+          Promodo to use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
+  </div>
 </section>
